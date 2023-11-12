@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <title>Login</title>
+    </head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-box">
+                <h1 class="h1">Entrar no Enade+</h1>
+                <div class="BOX1">
+                <div class="divr1">
+                    <input type="radio" id="aluno" name="drone" value="aluno"  checked />
+                    <label class="radio1" for="aluno">Aluno</label>
+                  </div>
+                
+                  <div class="divr2">
+                    <input type="radio" id="adm" name="drone" value="adm" />
+                    <label class="radio2" for="adm">Administrador</label>
+                  </div>
+                  </div>
+                <form action="./php/formularioLogin.php" method="post">
+                   
+                    <input class="email" type="email" id="email" name="email" placeholder="  | Email" required>
+                    
+                    <input class="email" type="password" id="senha" name="senha" placeholder="  | Senha" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="remember">
+                <div class="dremember">
+                    <input type="checkbox" id="remember" name="remember" />
+                    <label for="remember">Lembre de mim</label>
+                </div>
+                <div class="forgot">
+                    <h4> | Esqueci a senha</h4>
+                </div>
+                <div>
+                <button class="button" style="vertical-align:middle"><span>Cadastrar</span></button>
+            </div>
+            </div>      
+            </div>
+            </div>
+             
+            </main>
+            </body>
+            </html>
+            

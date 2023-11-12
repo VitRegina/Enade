@@ -1,0 +1,163 @@
+.form-box {
+    width: 350px;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+button { /*botão login*/
+    padding: 10px 20px;
+    background-color: #01518B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    align-items: center;
+    margin-left: 122px !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+}
+
+.botao-Login{
+    /*border: 1px red solid;*/
+    display: inline-block;
+    background-color: black;
+    border: none;
+    width: 200px;
+    height: 45px;    
+   border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    
+}
+.botao-Login:hover{
+    /*width: 100%;*/
+    background-color: rgb(142, 199, 180);
+}
+
+h1{
+    text-align: center;
+    color:black;
+    font-size: 120%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.radio1{
+    text-align: center;
+    color:black;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+
+}
+.radio2{
+    text-align: center;
+    color:black;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+
+}
+
+.divr1{
+    text-align: left;
+    display:inline-block;
+}
+
+.divr2{
+    text-align: right;
+    display: inline-block;
+}
+
+.BOX1{
+   align-items: center;
+   margin-left: 69px !important;
+}
+
+body{
+    background-color: #4d86ad;
+}
+
+.email{
+    align-items: center;
+    margin-left: 50px !important;
+    margin-right: 50px;
+    border-radius: 5px;
+    height: 0.8cm;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.remember{
+    align-items: center;
+    margin-left: 30px !important;
+}
+.dremember{
+    text-align: left;
+    display:inline-block;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+.forgot{
+    text-align: right;
+    display: inline-block;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.button { /*botão cadastrar*/
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #01518B;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 140%;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+    margin-left: 50px !important;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
