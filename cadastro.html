@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <title>Cadastro</title>
+    </head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-box">
+                <h1 class="h1">Cadastre-se no Enade+</h1>
+
+                <form action="./php/formularioLogin.php" method="post">
+                  
+                    <input class="email" type="text" id="nomecomp" name="nomecomp" placeholder="Nome Completo*" required>
+
+                    <div class="divr1">
+                        <input type="radio" id="nomesoc" name="nomesoc" value="nomesoc"  checked />
+                        <label class="radio1" for="nomesoc">Usar Nome Social</label>
+                    </div>
+                    
+                    <input class="email" type="text" id="nomesoc" name="nomesoc" placeholder="Nome Social" required>
+
+                    <input class="email" type="text" id="cpf" name="cpf" placeholder="CPF*" required>
+                    <script type="text/javascript">
+                        $("#cpf").mask("000.000.000-00");
+                    </script>
+
+                    <input class="email" type="text" id="datanasc" name="datanasc" placeholder="Data de Nascimento*" required>
+                    <script type="text/javascript">
+                        $("#datanasc").mask("00/00/0000");
+                    </script>
+
+                    <input class="email" type="tel" id="tel" name="tel" placeholder="Celular*" required>
+                    <script type="text/javascript">
+                        $("#tel").mask("(00) 00000-0000");
+                    </script>
+
+                    <input class="email" type="text" id="estado" name="estado" placeholder="Estado*" required>
+
+                    <input class="email" type="text" id="cidade" name="cidade" placeholder="Cidade*" required>
+
+                    <input class="email" type="text" id="inst" name="inst" placeholder="Instituição de Ensino*" required>
+
+                    <input class="email" type="text" id="curso" name="curso" placeholder="Curso*" required>
+
+                    <input class="email" type="email" id="email" name="email" placeholder="Email*" required>
+
+                    <script>
+                    let senha = document.getElementById('senha');
+                    let senhaC = document.getElementById('senhaC');
+
+                    function validarSenha() {
+                    if (senha.value != senhaC.value) {
+                        senhaC.setCustomValidity("Senhas diferentes!");
+                        senhaC.reportValidity();
+                        return false;
+                    } else {
+                        senhaC.setCustomValidity("");
+                        return true;
+                    }
+                    }
+                    // verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
+                    senhaC.addEventListener('input', validarSenha);
+                    </script>
+
+                    <input class="email" type="password" id="senha" name="senha" placeholder="Senha*" required>
+
+                    <input class="email" type="password" id="senhaC" name="senhaC" placeholder="Confirmar Senha*" required>
+
+                    <p>Possui alguma deficiência que necessite acessibilidade?</p>
+                    <div class="divr2">
+                        <input type="radio" id="nomesoc" name="nomesoc" value="nomesoc" />
+                        <label class="radio1" for="nomesoc">Sim, visual</label><br>
+
+                        <input type="radio" id="nomesoc" name="nomesoc" value="nomesoc" />
+                        <label class="radio1" for="nomesoc">Sim, auditiva</label><br>
+
+                        <input type="radio" id="nomesoc" name="nomesoc" value="nomesoc" />
+                        <label class="radio1" for="nomesoc">Sim, visual e auditiva</label><br>
+
+                        <input type="radio" id="nomesoc" name="nomesoc" value="nomesoc" />
+                        <label class="radio1" for="nomesoc">Não</label><br>
+                    
+                    <div class="dados">
+                    <input type="checkbox" id="dados" name="dados" value="dados">
+                    <label for="dados"> Declaro que todas as informações preenchidas neste cadastro são 
+                    verídicas.</label><br>
+                    <input type="checkbox" id="dados" name="dados" value="dados">
+                    <label for="dados"> Li e aceito os <b>TERMOS DE USO</b> e <b>POLÍTICA DE PRIVACIDADE.</b> </label><br>
+                    </div>
+                    </div>
+                    <div>
+                    <button type="submit" onclick="return validarSenha()">Cadastrar</button>
+                    </div>
+                    </div>
+                    </div>
+                    </form>
+                </main>
+                </body>
+                </html>

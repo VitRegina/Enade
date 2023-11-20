@@ -13,6 +13,9 @@
         <div class="container">
             <div class="form-box">
                 <h1 class="h1">Entrar no Enade+</h1>
+               
+                <form action="./php/formularioLogin.php" method="post">
+
                 <div class="BOX1">
                 <div class="divr1">
                     <input type="radio" id="aluno" name="drone" value="aluno"  checked />
@@ -24,28 +27,30 @@
                     <label class="radio2" for="adm">Administrador</label>
                   </div>
                   </div>
-                <form action="./php/formularioLogin.php" method="post">
-                   
+
                     <input class="email" type="email" id="email" name="email" placeholder="  | Email" required>
                     
                     <input class="email" type="password" id="senha" name="senha" placeholder="  | Senha" required>
-                    <button type="submit">Login</button>
-                </form>
-                <div class="remember">
-                <div class="dremember">
+
+                    <button type="submit">Login</button> 
+
+                    <div class="remember">
+                    <div class="dremember">
                     <input type="checkbox" id="remember" name="remember" />
                     <label for="remember">Lembre de mim</label>
                 </div>
+
                 <div class="forgot">
                     <h4> | Esqueci a senha</h4>
                 </div>
+                
                 <div>
-                <button class="button" style="vertical-align:middle"><span>Cadastrar</span></button>
+                <button class="button" href="cadastro.html" style="vertical-align:middle"><span>Cadastrar</span></button>
             </div>
             </div>      
             </div>
             </div>
-             
+                </form>
             </main>
             </body>
             </html>
