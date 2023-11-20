@@ -1,0 +1,112 @@
+.form-box {
+    width: 350px;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+button { 
+    padding: 10px 20px;
+    background-color: #01518B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    align-items: center;
+    margin-left: 122px !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rem; /*coloca o quadrado branco mais pra baixo da pag*/
+}
+
+.botao-Login{
+    /*border: 1px red solid;*/
+    display: inline-block;
+    background-color: black;
+    border: none;
+    width: 200px;
+    height: 45px;    
+   border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    
+}
+.botao-Login:hover{
+    /*width: 100%;*/
+    background-color: rgb(142, 199, 180);
+}
+
+h1{
+    text-align: center;
+    color:black;
+    font-size: 120%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+body{
+    background-color: #4d86ad;
+    min-height: 180vh; /*aumenta a pag*/
+}
+
+.email{ /*todos os campos*/
+    align-items: center;
+    margin-left: 50px !important;
+    margin-right: 50px;
+    border-radius: 5px;
+    height: 0.8cm;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.divr1{ /*nome social*/
+    text-align: left;
+    display:inline-block;
+    margin-left: 50px !important;
+    margin-right: 50px;
+}
+.radio1{
+    text-align: center;
+    color:black;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+p{
+    text-align: center;
+    color:black;
+    font-size: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+    margin-left: 50px !important;
+    margin-right: 50px;
+}
+.divr2{ /*deficiencias*/
+    text-align: left;
+    display:inline-block;
+    margin-left: 50px !important;
+    margin-right: 50px;
+}
+/*.dadosdiv{
+    align-items: center;
+    margin-left: 30px !important;
+}*/
+.dados{
+    text-align: left;
+    display:inline-block;
+    font-size: 90%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
